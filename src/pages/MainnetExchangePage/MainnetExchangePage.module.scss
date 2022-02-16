@@ -131,8 +131,14 @@ h2 {
     .container {
         margin: 6px;
     }
+}
 
+@media (max-width: 400px) {
     .chartDescription {
         flex-direction: column;
+    }
+
+    .chartLegend {
+        margin-bottom: 10px;
     }
 }
