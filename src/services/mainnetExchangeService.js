@@ -31,7 +31,7 @@ const API_KEY = null;
 
 export async function getPairDataKeyNeeded() {
   try {
-    return await axios.post(`https://gateway.thegraph.com/api/${API_KEY}/deployments/id/QmWkVS3Uzr2WsTwvxtte2dpHbSYJSQ1bTQMVciKXCWx7TM`, {
+    return await axios.post(`https://gateway.thegraph.com/api/${API_KEY}/subgraphs/id/0x4bb4c1b0745ef7b4642feeccd0740dec417ca0a0-0`, {
       query,
     });
   } catch (error) {
