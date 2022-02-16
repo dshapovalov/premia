@@ -26,7 +26,7 @@ class MainnetExchangeStore {
       this.loaded = false;
     });
 
-    const pairData = await this.service.getPairDataKeyNeeded();
+    const pairData = await this.service.getPairData();
 
     const { data, WBTCPrice, WBTCPriceUSD, WETHPrice, WETHPriceUSD, WBTCLiquidity, WETHLiquidity } = prepareExchangeData(pairData.data);
 
